@@ -1,0 +1,11 @@
+cat > render.yaml << 'EOF'
+services:
+  - type: web
+    name: ChandMusic
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+EOF
