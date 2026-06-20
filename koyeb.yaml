@@ -1,0 +1,9 @@
+cat > koyeb.yaml << 'EOF'
+name: ChandMusic
+services:
+  - type: web
+    name: ChandMusic
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+EOF
