@@ -1,0 +1,11 @@
+cat > railway.json << 'EOF'
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "startCommand": "python3 main.py"
+  }
+}
+EOF
