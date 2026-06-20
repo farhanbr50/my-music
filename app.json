@@ -1,0 +1,35 @@
+cat > app.json << 'EOF'
+{
+  "name": "✨ Chand Music ✨",
+  "description": "Telegram VC Music Bot",
+  "repository": "https://github.com/Chand/ChandMusic",
+  "logo": "https://i.ibb.co/qYbmh3w1/x.jpg",
+  "keywords": ["telegram", "music", "bot", "python"],
+  "env": {
+    "API_ID": {
+      "description": "API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "API HASH from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token from @BotFather",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Pyrogram String Session",
+      "required": true
+    },
+    "MONGO_DB_URL": {
+      "description": "MongoDB URL",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    }
+  }
+}
+EOF
